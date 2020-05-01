@@ -1,11 +1,5 @@
 # Wildshape-Tracker
 
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Apr 27 23:13:28 2020
-
-@author: rebec
-"""
 
 #CotM = Circle of the Moon subclass
 #lists possible STANDARD wildshapes by level and CR
