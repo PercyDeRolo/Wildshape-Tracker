@@ -2907,7 +2907,7 @@ def choose(beast):
           
           print(all_beasts)
 
-         while True:
+          while True:
               
               beast = input('Please input a beast: ')
 
@@ -2918,47 +2918,47 @@ def choose(beast):
                   print('Please enter a valid input')
                   pass
 
-       if beast == 'explore':
-          explore()
+     if beast == 'explore':
+        explore()
 
-       elif beast in beast_stats:
-          print('\n\n',beast_stats[beast])
+     elif beast in beast_stats
+      print('\n\n',beast_stats[beast])
 
-       else:
-          print('Please enter a valid input')
+     else:
+        print('Please enter a valid input')
 
  
  
 def hp_tracker(beast):
     
-    print('\nYour starting HP is ',beast_hp[beast])
-    
-    HP = beast_hp[beast]
-    
-    while HP > 0:
-    
-    loss = input("Enter HP lost/gained, or enter 'revert' to use a bonus action to return to your normal form: ")
-        
-        try:
-         
-         loss = int(loss)
-        
-        except ValueError:
-        
-            if loss == 'revert':
-          
-                print('You have reverted to your normal form')
-                
-                return
-            else:
-                pass
-        if isinstance(loss, int):
-            print('Your HP is ',int(HP)+int(loss))
-            HP += int(loss)
-        
-        if HP <= 0:
-            print('You have reached 0 HP. You have reverted to your normal form')
-            return
+      print('\nYour starting HP is ',beast_hp[beast])
+
+      HP = beast_hp[beast]
+
+      while HP > 0:
+
+      loss = input("Enter HP lost/gained, or enter 'revert' to use a bonus action to return to your normal form: ")
+
+          try:
+
+           loss = int(loss)
+
+          except ValueError:
+
+              if loss == 'revert':
+
+                  print('You have reverted to your normal form')
+
+                  return
+              else:
+                  pass
+          if isinstance(loss, int):
+              print('Your HP is ',int(HP)+int(loss))
+              HP += int(loss)
+
+          if HP <= 0:
+              print('You have reached 0 HP. You have reverted to your normal form')
+              return
     
     
 
