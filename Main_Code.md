@@ -2885,21 +2885,21 @@ def explore():
                 else:
                     print('\nPlease enter a valid number') 
 
-        if lvl in range(2,21):
-            print('\nYou can stay in animal form for up to',int(lvl/2),'hours.')
-        else:
-            pass
-        if lvl in range(2,21):
-         stats = input('\nIf you would like to know more about one of these beasts, enter it here: ')
-         if stats in beast_stats:
-              print('\n'+str(beast_stats[stats]))
-        restart = input('\nWould you like to keep exploring? (y/n) ')
-        if restart == 'y':
-            count +=1
-        elif restart == 'n':
-            return 
+            if lvl in range(2,21):
+                print('\nYou can stay in animal form for up to',int(lvl/2),'hours.')
+            else:
+                pass
+            if lvl in range(2,21):
+             stats = input('\nIf you would like to know more about one of these beasts, enter it here: ')
+             if stats in beast_stats:
+                  print('\n'+str(beast_stats[stats]))
+            restart = input('\nWould you like to keep exploring? (y/n) ')
+            if restart == 'y':
+                count +=1
+            elif restart == 'n':
+                return 
 
- 
+
  
 def choose(beast):
    
