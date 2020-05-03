@@ -2797,7 +2797,7 @@ def explore():
             else:
                 print('\nPlease enter a valid number')
             
-        elif subclass == 'y':
+    elif subclass == 'y':
             pass
             
             if lvl == 1:
