@@ -2743,11 +2743,12 @@ all_standard_beasts = ('Baboon', 'Badger', 'Cat', 'Deer', 'Frog', 'Giant Fire Be
                        'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony', 'Giant Crab', 'Poisonous Snake', 'Blood Hawk', 'Flying Snake', 'Stirge', 'Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 
                        'Panther', 'Riding Horse', 'Wolf', 'Constrictor Snake', 'Giant Frog', 'Giant Poisonous Snake', 'Giant Bat', 'Giant Owl', 'Pteranodon', 'Ape', 'Black Bear', 'Crocodile', 'Giant Sea Horse', 'Reef Shark', 'Warhorse', 'Giant Goat', 'Giant Wasp', 
                        'Brown Bear', 'Dire Wolf', 'Giant Eagle', 'Giant Hyena', 'Giant Octopus', 'Giant Spider', 'Giant Toad', 'Giant Vulture', 'Lion', 'Tiger')
-### 86 beasts in all, 66 in all_standard
+#86 beasts in all, 66 in all_standard
 
 
 def explore(): 
 #asks if druid is cricle of the moon since they have more shapes avaiable
+    
     count = 0
     while count < 10:
         while True:
@@ -2761,10 +2762,12 @@ def explore():
                 
     
 #asks for druid level, which determines max CR of wildshape
-        lvl = int(input('What is your druid level? '))
+ 
+    lvl = int(input('What is your druid level? '))
 
 #prints which beasts are suitable for your subclass and level
-        if subclass == 'n':
+ 
+    if subclass == 'n':
             pass
             
             if lvl == 1:
