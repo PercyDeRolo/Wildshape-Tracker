@@ -4,17 +4,20 @@
 #lists possible STANDARD wildshapes by level and CR
 
 #level 2, max CR 1/4, no flying or swimming
+
 lvl_2_CR_0 = ('Baboon', 'Badger', 'Cat', 'Deer', 'Giant Fire Beetle', 'Goat', 'Hyena', 'Jackal', 'Lizard', 'Rat', 'Scorpion', 'Spider', 'Weasel')
 lvl_2_CR_0125 = ('Camel', 'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony')
 lvl_2_CR_025 = ('Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 'Panther', 'Riding Horse', 'Wolf')
 
 #level 4, max CR 1/2, no flying
+
 lvl_4_CR_0 = ('Baboon', 'Badger', 'Cat', 'Deer', 'Frog', 'Giant Fire Beetle', 'Goat', 'Hyena', 'Jackal', 'Lizard', 'Rat', 'Scorpion', 'Spider', 'Weasel', 'Crab', 'Octopus', 'Quipper', 'Sea Horse')
 lvl_4_CR_0125 = ('Camel', 'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony', 'Giant Crab', 'Poisonous Snake')
 lvl_4_CR_025 = ('Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 'Panther', 'Riding Horse', 'Wolf', 'Constrictor Snake', 'Giant Frog', 'Giant Poisonous Snake')
 lvl_4_CR_05 = ('Ape', 'Black Bear', 'Crocodile', 'Giant Sea Horse', 'Reef Shark', 'Warhorse', 'Giant Goat')
 
 #level 8, max CR 1
+
 lvl_8_CR_0 = ('Baboon', 'Badger', 'Cat', 'Deer', 'Frog', 'Giant Fire Beetle', 'Goat', 'Hyena', 'Jackal', 'Lizard', 'Rat', 'Scorpion', 'Spider', 'Weasel', 'Crab', 'Octopus', 'Quipper', 'Sea Horse', 'Bat', 'Eagle', 'Hawk', 'Owl', 'Raven', 'Vulture')
 lvl_8_CR_0125 = ('Camel', 'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony', 'Giant Crab', 'Poisonous Snake', 'Blood Hawk', 'Flying Snake', 'Stirge')
 lvl_8_CR_025 = ('Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 'Panther', 'Riding Horse', 'Wolf', 'Constrictor Snake', 'Giant Frog', 'Giant Poisonous Snake', 'Giant Bat', 'Giant Owl', 'Pteranodon')
@@ -24,6 +27,7 @@ lvl_8_CR_1 = ('Brown Bear', 'Dire Wolf', 'Giant Eagle', 'Giant Hyena', 'Giant Oc
 #lists possible CotM wildshapes by level and CR
 
 #levlel 2, max CR 1, no flying or swimming
+
 cotm_lvl_2_CR_0 = ('Baboon', 'Badger', 'Cat', 'Deer', 'Giant Fire Beetle', 'Goat', 'Hyena', 'Jackal', 'Lizard', 'Rat', 'Scorpion', 'Spider', 'Weasel')
 cotm_lvl_2_CR_0125 = ('Camel', 'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony')
 cotm_lvl_2_CR_025 = ('Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 'Panther', 'Riding Horse', 'Wolf')
@@ -31,6 +35,7 @@ cotm_lvl_2_CR_05 = ('Ape', 'Black Bear', 'Warhorse', 'Giant Goat', )
 cotm_lvl_2_CR_1 = ('Brown Bear', 'Dire Wolf', 'Giant Hyena', 'Giant Spider', 'Lion', 'Tiger')
  
 #level 4, max CR 1, no flying                  
+
 cotm_lvl_4_CR_0 = ('Baboon', 'Badger', 'Cat', 'Deer', 'Frog', 'Giant Fire Beetle', 'Goat', 'Hyena', 'Jackal', 'Lizard', 'Rat', 'Scorpion', 'Spider', 'Weasel', 'Crab', 'Octopus', 'Quipper' 'Sea Horse')
 cotm_lvl_4_CR_0125 = ('Camel', 'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony', 'Giant Crab', 'Poisonous Snake')
 cotm_lvl_4_CR_025 = ('Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 'Panther', 'Riding Horse', 'Wolf', 'Constrictor Snake', 'Giant Frog', 'Giant Poisonous Snake')
@@ -38,6 +43,7 @@ cotm_lvl_4_CR_05 = ('Ape', 'Black Bear', 'Crocodile', 'Giant Sea Horse', 'Reef S
 cotm_lvl_4_CR_1 = ('Brown Bear', 'Dire Wolf', 'Giant Hyena', 'Giant Spider', 'Lion', 'Tiger', 'Giant Octopus', 'Giant Toad', 'Swarm of Quippers')
 
 #level 6, max CR 2, no flying
+
 cotm_lvl_6_CR_0 = ('Baboon', 'Badger', 'Cat', 'Deer', 'Frog', 'Giant Fire Beetle', 'Goat', 'Hyena', 'Jackal', 'Lizard', 'Rat', 'Scorpion', 'Spider', 'Weasel', 'Crab', 'Octopus', 'Quipper' 'Sea Horse')
 cotm_lvl_6_CR_0125 = ('Camel', 'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony', 'Giant Crab', 'Poisonous Snake')
 cotm_lvl_6_CR_025 = ('Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 'Panther', 'Riding Horse', 'Wolf', 'Constrictor Snake', 'Giant Frog', 'Giant Poisonous Snake')
@@ -46,6 +52,7 @@ cotm_lvl_6_CR_1 = ('Brown Bear', 'Dire Wolf', 'Giant Hyena', 'Giant Spider', 'Li
 cotm_lvl_6_CR_2 = ('Allosaurus', 'Giant Boar', 'Giant Constrictor Snake', 'Giant Elk', 'Hunter Shark', 'Plesiosaurus', 'Polar Bear', 'Rhinoceros', 'Sabre-Toothed Tiger')
 
 #level 8, max CR 2
+
 cotm_lvl_8_CR_0 = ('Baboon', 'Badger', 'Cat', 'Deer', 'Frog', 'Giant Fire Beetle', 'Goat', 'Hyena', 'Jackal', 'Lizard', 'Rat', 'Scorpion', 'Spider', 'Weasel', 'Crab', 'Octopus', 'Quipper', 'Sea Horse', 'Bat', 'Eagle', 'Hawk', 'Owl', 'Raven', 'Vulture')
 cotm_lvl_8_CR_0125 = ('Camel', 'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony', 'Giant Crab', 'Poisonous Snake', 'Blood Hawk', 'Flying Snake', 'Stirge')
 cotm_lvl_8_CR_025 = ('Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 'Panther', 'Riding Horse', 'Wolf', 'Constrictor Snake', 'Giant Frog', 'Giant Poisonous Snake', 'Giant Bat', 'Giant Owl', 'Pteranodon')
@@ -54,6 +61,7 @@ cotm_lvl_8_CR_1 = ('Brown Bear', 'Dire Wolf', 'Giant Eagle', 'Giant Hyena', 'Gia
 cotm_lvl_8_CR_2 = ('Allosaurus', 'Giant Boar', 'Giant Constrictor Snake', 'Giant Elk', 'Hunter Shark', 'Plesiosaurus', 'Polar Bear', 'Rhinoceros', 'Sabre-Toothed Tiger')
 
 #level 9, max CR 3
+
 cotm_lvl_9_CR_0 = ('Baboon', 'Badger', 'Cat', 'Deer', 'Frog', 'Giant Fire Beetle', 'Goat', 'Hyena', 'Jackal', 'Lizard', 'Rat', 'Scorpion', 'Spider', 'Weasel', 'Crab', 'Octopus', 'Quipper', 'Sea Horse', 'Bat', 'Eagle', 'Hawk', 'Owl', 'Raven', 'Vulture')
 cotm_lvl_9_CR_0125 = ('Camel', 'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony', 'Giant Crab', 'Poisonous Snake', 'Blood Hawk', 'Flying Snake', 'Stirge')
 cotm_lvl_9_CR_025 = ('Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 'Panther', 'Riding Horse', 'Wolf', 'Constrictor Snake', 'Giant Frog', 'Giant Poisonous Snake', 'Giant Bat', 'Giant Owl', 'Pteranodon')
@@ -63,6 +71,7 @@ cotm_lvl_9_CR_2 = ('Allosaurus', 'Giant Boar', 'Giant Constrictor Snake', 'Giant
 cotm_lvl_9_CR_3 = ('Ankylosaurus', 'Giant Scorpion', 'Killer Whale')
 
 #level 12, max CR 4
+
 cotm_lvl_12_CR_0 = ('Baboon', 'Badger', 'Cat', 'Deer', 'Frog', 'Giant Fire Beetle', 'Goat', 'Hyena', 'Jackal', 'Lizard', 'Rat', 'Scorpion', 'Spider', 'Weasel', 'Crab', 'Octopus', 'Quipper', 'Sea Horse', 'Bat', 'Eagle', 'Hawk', 'Owl', 'Raven', 'Vulture')
 cotm_lvl_12_CR_0125 = ('Camel', 'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony', 'Giant Crab', 'Poisonous Snake', 'Blood Hawk', 'Flying Snake', 'Stirge')
 cotm_lvl_12_CR_025 = ('Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 'Panther', 'Riding Horse', 'Wolf', 'Constrictor Snake', 'Giant Frog', 'Giant Poisonous Snake', 'Giant Bat', 'Giant Owl', 'Pteranodon') 
@@ -73,6 +82,7 @@ cotm_lvl_12_CR_3 = ('Ankylosaurus', 'Giant Scorpion', 'Killer Whale')
 cotm_lvl_12_CR_4 = ('Elephant')
 
 #level 15, max CR 5
+
 cotm_lvl_15_CR_0 = ('Baboon', 'Badger', 'Cat', 'Deer', 'Frog', 'Giant Fire Beetle', 'Goat', 'Hyena', 'Jackal', 'Lizard', 'Rat', 'Scorpion', 'Spider', 'Weasel', 'Crab', 'Octopus', 'Quipper', 'Sea Horse', 'Bat', 'Eagle', 'Hawk', 'Owl', 'Raven', 'Vulture')
 cotm_lvl_15_CR_0125 = ('Camel', 'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony', 'Giant Crab', 'Poisonous Snake', 'Blood Hawk', 'Flying Snake', 'Stirge')
 cotm_lvl_15_CR_025 = ('Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 'Panther', 'Riding Horse', 'Wolf', 'Constrictor Snake', 'Giant Frog', 'Giant Poisonous Snake', 'Giant Bat', 'Giant Owl', 'Pteranodon') 
@@ -84,6 +94,7 @@ cotm_lvl_15_CR_4 = ('Elephant')
 cotm_lvl_15_CR_5 = ('Giant Crocodile', 'Giant Shark', 'Triceratops')
 
 #level 18, max CR 6
+
 cotm_lvl_18_CR_0 = ('Baboon', 'Badger', 'Cat', 'Deer', 'Frog', 'Giant Fire Beetle', 'Goat', 'Hyena', 'Jackal', 'Lizard', 'Rat', 'Scorpion', 'Spider', 'Weasel', 'Crab', 'Octopus', 'Quipper', 'Sea Horse', 'Bat', 'Eagle', 'Hawk', 'Owl', 'Raven', 'Vulture')
 cotm_lvl_18_CR_0125 = ('Camel', 'Giant Rat', 'Giant Weasel', 'Mastiff', 'Mule', 'Pony', 'Giant Crab', 'Poisonous Snake', 'Blood Hawk', 'Flying Snake', 'Stirge')
 cotm_lvl_18_CR_025 = ('Axe Beak', 'Boar', 'Draft Horse', 'Elk', 'Giant Badger', 'Giant Centipede', 'Giant Lizard', 'Giant Wolf Spider', 'Panther', 'Riding Horse' 'Wolf', 'Constrictor Snake', 'Giant Frog', 'Giant Poisonous Snake', 'Giant Bat', 'Giant Owl', 'Pteranodon') 
