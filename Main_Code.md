@@ -2921,7 +2921,7 @@ def choose(beast):
      if beast == 'explore':
         explore()
 
-     elif beast in beast_stats
+     elif beast in beast_stats:
       print('\n\n',beast_stats[beast])
 
      else:
@@ -2937,7 +2937,7 @@ def hp_tracker(beast):
 
       while HP > 0:
 
-      loss = input("Enter HP lost/gained, or enter 'revert' to use a bonus action to return to your normal form: ")
+          loss = input("Enter HP lost/gained, or enter 'revert' to use a bonus action to return to your normal form: ")
 
           try:
 
@@ -3030,59 +3030,59 @@ choice = 'r'
 
 while choice == 'r':   
     
-    choice = input("Would you like to see the rules pertaining to wildshape, explore your wildshape options based on your level, or choose one now? Please enter 'rules', 'explore' or 'choose': ")
-    
-    if choice == 'explore':
-        explore()
-        choice = input('Would you like to restart, or quit? (r/q) ')
-    
-    elif choice == 'rules':
-        while True:
-            subclass = input('Is your subclass Circle of the Moon? (y/n) ')
-            if subclass == 'y':
-                cotm_rules()
-                input()
-                break
-            elif subclass == 'n':
-                rules()
-                input()
-                break
-            elif subclass == 'q' or subclass == 'quit':
-                break
-            else: 
-                print('Please enter a valid input')
-                
-    elif choice == 'choose':
-        while True:
-            uses = input('How many uses of wildshape do you have left? (0-2) ')
-            try: 
-                uses = int(uses)
-            
-            except ValueError:
-                if uses == 'q' or uses == 'quit':
-                    break
-                else:
-                    print('Please enter a valid input')
-            
-            if uses in range(1,3):
-                beast = input("Please enter a beast to wildshape into. For valid options pertaining to level use the 'explore' command. For all options use the 'all' command: " )
-                choose(beast)
-                if beast == 'q' or beast == 'quit':
-                    break
-                hp_tracker(beast)
-                uses = uses - 1
-                print('You have',int(uses),'use(s) of wildshape left until your next short or long rest.')
-                
-            elif uses == 0:
-                print('You have no more uses of wildshape left, you must take a short or long rest')
-                
-          
-        
-        choice = input('Would you like to restart, or quit? (r/q) ')
-    
-    elif choice == 'quit' or choice == 'q':
-        break
-    
-    else:
-        print( 'Please enter a valid option')
-        choice = 'r'
+      choice = input("Would you like to see the rules pertaining to wildshape, explore your wildshape options based on your level, or choose one now? Please enter 'rules', 'explore' or 'choose': ")
+
+      if choice == 'explore':
+          explore()
+          choice = input('Would you like to restart, or quit? (r/q) ')
+
+      elif choice == 'rules':
+          while True:
+              subclass = input('Is your subclass Circle of the Moon? (y/n) ')
+              if subclass == 'y':
+                  cotm_rules()
+                  input()
+                  break
+              elif subclass == 'n':
+                  rules()
+                  input()
+                  break
+              elif subclass == 'q' or subclass == 'quit':
+                  break
+              else: 
+                  print('Please enter a valid input')
+
+      elif choice == 'choose':
+          while True:
+              uses = input('How many uses of wildshape do you have left? (0-2) ')
+              try: 
+                  uses = int(uses)
+
+              except ValueError:
+                  if uses == 'q' or uses == 'quit':
+                      break
+                  else:
+                      print('Please enter a valid input')
+
+              if uses in range(1,3):
+                  beast = input("Please enter a beast to wildshape into. For valid options pertaining to level use the 'explore' command. For all options use the 'all' command: " )
+                  choose(beast)
+                  if beast == 'q' or beast == 'quit':
+                      break
+                  hp_tracker(beast)
+                  uses = uses - 1
+                  print('You have',int(uses),'use(s) of wildshape left until your next short or long rest.')
+
+              elif uses == 0:
+                  print('You have no more uses of wildshape left, you must take a short or long rest')
+
+
+
+          choice = input('Would you like to restart, or quit? (r/q) ')
+
+      elif choice == 'quit' or choice == 'q':
+          break
+
+      else:
+          print( 'Please enter a valid option')
+          choice = 'r'
