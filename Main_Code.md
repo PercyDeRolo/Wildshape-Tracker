@@ -2749,161 +2749,163 @@ all_standard_beasts = ('Baboon', 'Badger', 'Cat', 'Deer', 'Frog', 'Giant Fire Be
 def explore(): 
 #asks if druid is cricle of the moon since they have more shapes avaiable
     
-    count = 0
-    while count < 10:
-        while True:
-            subclass = input('Is your druid subclass circle of the moon? (y/n) ')
-            if subclass == 'y' or subclass == 'n':
-                break
-            elif subclass == 'q' or subclass == 'quit':
-                return
-            else:
-                print('Please enter a valid input')
-                
+        count = 0
+        while count < 10:
+            while True:
+                subclass = input('Is your druid subclass circle of the moon? (y/n) ')
+                if subclass == 'y' or subclass == 'n':
+                    break
+                elif subclass == 'q' or subclass == 'quit':
+                    return
+                else:
+                    print('Please enter a valid input')
+
     
 #asks for druid level, which determines max CR of wildshape
  
-    lvl = int(input('What is your druid level? '))
+       lvl = int(input('What is your druid level? '))
 
 #prints which beasts are suitable for your subclass and level
  
-    if subclass == 'n':
-            pass
-            
-            if lvl == 1:
-                print('Your level is too low to have unlocked any wildshapes. Please wait until level 2')    
-            
-            elif lvl in range(2,4):
-                print('\n\nYou can be a beast up to CR 1/4, as long as it has no flying or swim speeds. Here are your options:')
-                print('\nCR 0 - '+', '.join(lvl_2_CR_0))
-                print('CR 1/8 -'+', '.join(lvl_2_CR_0125))
-                print('CR 1/4 - '+', '.join(lvl_2_CR_025))
-            
-            elif lvl in range(4,8):
-                print('\n\nYou can be a beast up to CR 1/2, as long as it has no flying speed. Here are your options:')
-                print('\nCR 0 - '+', '.join(lvl_4_CR_0))
-                print('CR 1/8 -'+', '.join(lvl_4_CR_0125))
-                print('CR 1/4 - '+', '.join(lvl_4_CR_025))
-                print('CR 1/2 - '+', '.join(lvl_4_CR_05))
-            
-            elif lvl in range(4,21):
-                print('\n\nYou can be any beast up to CR 1. Here are your options:')
-                print('\nCR 0 - '+', '.join(lvl_8_CR_0))
-                print('CR 1/8 -'+', '.join(lvl_8_CR_0125))
-                print('CR 1/4 - '+', '.join(lvl_8_CR_025))
-                print('CR 1/2 - '+', '.join(lvl_8_CR_05))
-                print('CR 1 - '+', '.join(lvl_8_CR_1))
-        
-            else:
-                print('\nPlease enter a valid number')
-            
-    elif subclass == 'y':
-            pass
-            
-            if lvl == 1:
-                print('\nYour level is too low to have unlocked any wildshapes. Please wait until level 2')        
-            
-            elif lvl in range(2,4):
-                print('\n\nYou can be a beast up to CR 1, as long as it has no flying or swim speeds. Here are your options:')
-                print('\nCR 0 - '+', '.join(cotm_lvl_2_CR_0))
-                print('CR 1/8 -'+', '.join(cotm_lvl_2_CR_0125))
-                print('CR 1/4 - '+', '.join(cotm_lvl_2_CR_025))
-                print('CR 1/2 - '+', '.join(cotm_lvl_2_CR_05))
-                print('CR 1 - '+', '.join(cotm_lvl_2_CR_1))
-            
-            elif lvl in range(4,6):
-                print('\n\nYou can be a beast up to CR 1, as long as it has no flying speed. Here are your options:')
-                print('\nCR 0 - '+', '.join(cotm_lvl_4_CR_0))
-                print('CR 1/8 -'+', '.join(cotm_lvl_4_CR_0125))
-                print('CR 1/4 - '+', '.join(cotm_lvl_4_CR_025))
-                print('CR 1/2 - '+', '.join(cotm_lvl_4_CR_05))
-                print('CR 1 - '+', '.join(cotm_lvl_4_CR_1))
-            
-            elif lvl in range(6,8):
-                print('\n\nYou can be a beast up to CR 2, as long as it has no flying speed. Here are your options:')
-                print('\nCR 0 - '+', '.join(cotm_lvl_6_CR_0))
-                print('CR 1/8 -'+', '.join(cotm_lvl_6_CR_0125))
-                print('CR 1/4 - '+', '.join(cotm_lvl_6_CR_025))
-                print('CR 1/2 - '+', '.join(cotm_lvl_6_CR_05))
-                print('CR 1 - '+', '.join(cotm_lvl_6_CR_1))
-                print('CR 2 - '+', '.join(cotm_lvl_6_CR_2))
-            
-            elif lvl == 8:
-                print('\n\nYou can be any beast up to CR 2. Here are your options:')
-                print('\nCR 0 - '+', '.join(cotm_lvl_8_CR_0))
-                print('CR 1/8 -'+', '.join(cotm_lvl_8_CR_0125))
-                print('CR 1/4 - '+', '.join(cotm_lvl_8_CR_025))
-                print('CR 1/2 - '+', '.join(cotm_lvl_8_CR_05))
-                print('CR 1 - '+', '.join(cotm_lvl_8_CR_1))
-                print('CR 2 - '+', '.join(cotm_lvl_8_CR_2))
-            
-            elif lvl in range(9,12):
-                print('\n\nYou can be any beast up to CR 3. Here are your options:')
-                print('\nCR 0 - '+', '.join(cotm_lvl_9_CR_0))
-                print('CR 1/8 -'+', '.join(cotm_lvl_9_CR_0125))
-                print('CR 1/4 - '+', '.join(cotm_lvl_9_CR_025))
-                print('CR 1/2 - '+', '.join(cotm_lvl_9_CR_05))
-                print('CR 1 - '+', '.join(cotm_lvl_9_CR_1))
-                print('CR 2 - '+', '.join(cotm_lvl_9_CR_2))
-                print('CR 3 - '+', '.join(cotm_lvl_9_CR_3))
-            
-            elif lvl in range(12,15):
-                print('\n\nYou can be any beast up to CR 4. Here are your options:')
-                print('\nCR 0 - '+', '.join(cotm_lvl_12_CR_0))
-                print('CR 1/8 -'+', '.join(cotm_lvl_12_CR_0125))
-                print('CR 1/4 - '+', '.join(cotm_lvl_12_CR_025))
-                print('CR 1/2 - '+', '.join(cotm_lvl_12_CR_05))
-                print('CR 1 - '+', '.join(cotm_lvl_12_CR_1))
-                print('CR 2 - '+', '.join(cotm_lvl_12_CR_2))
-                print('CR 3 - '+', '.join(cotm_lvl_12_CR_3))
-                print('CR 4 - '+', '.join(cotm_lvl_12_CR_4))
-            
-            elif lvl in range(15,18):
-                print('\n\nYou can be any beast up to CR 5. Here are your options:')
-                print('\nCR 0 - '+', '.join(cotm_lvl_15_CR_0))
-                print('CR 1/8 -'+', '.join(cotm_lvl_15_CR_0125))
-                print('CR 1/4 - '+', '.join(cotm_lvl_15_CR_025))
-                print('CR 1/2 - '+', '.join(cotm_lvl_15_CR_05))
-                print('CR 1 - '+', '.join(cotm_lvl_15_CR_1))
-                print('CR 2 - '+', '.join(cotm_lvl_15_CR_2))
-                print('CR 3 - '+', '.join(cotm_lvl_15_CR_3))
-                print('CR 4 - '+', '.join(cotm_lvl_15_CR_4))
-                print('CR 5 - '+', '.join(cotm_lvl_15_CR_5))
+        if subclass == 'n':
+                pass
+
+                if lvl == 1:
+                    print('Your level is too low to have unlocked any wildshapes. Please wait until level 2')    
+
+                elif lvl in range(2,4):
+                    print('\n\nYou can be a beast up to CR 1/4, as long as it has no flying or swim speeds. Here are your options:')
+                    print('\nCR 0 - '+', '.join(lvl_2_CR_0))
+                    print('CR 1/8 -'+', '.join(lvl_2_CR_0125))
+                    print('CR 1/4 - '+', '.join(lvl_2_CR_025))
+
+                elif lvl in range(4,8):
+                    print('\n\nYou can be a beast up to CR 1/2, as long as it has no flying speed. Here are your options:')
+                    print('\nCR 0 - '+', '.join(lvl_4_CR_0))
+                    print('CR 1/8 -'+', '.join(lvl_4_CR_0125))
+                    print('CR 1/4 - '+', '.join(lvl_4_CR_025))
+                    print('CR 1/2 - '+', '.join(lvl_4_CR_05))
+
+                elif lvl in range(4,21):
+                    print('\n\nYou can be any beast up to CR 1. Here are your options:')
+                    print('\nCR 0 - '+', '.join(lvl_8_CR_0))
+                    print('CR 1/8 -'+', '.join(lvl_8_CR_0125))
+                    print('CR 1/4 - '+', '.join(lvl_8_CR_025))
+                    print('CR 1/2 - '+', '.join(lvl_8_CR_05))
+                    print('CR 1 - '+', '.join(lvl_8_CR_1))
+
+                else:
+                    print('\nPlease enter a valid number')
+
+        elif subclass == 'y':
+                pass
+
+                if lvl == 1:
+                    print('\nYour level is too low to have unlocked any wildshapes. Please wait until level 2')        
+
+                elif lvl in range(2,4):
+                    print('\n\nYou can be a beast up to CR 1, as long as it has no flying or swim speeds. Here are your options:')
+                    print('\nCR 0 - '+', '.join(cotm_lvl_2_CR_0))
+                    print('CR 1/8 -'+', '.join(cotm_lvl_2_CR_0125))
+                    print('CR 1/4 - '+', '.join(cotm_lvl_2_CR_025))
+                    print('CR 1/2 - '+', '.join(cotm_lvl_2_CR_05))
+                    print('CR 1 - '+', '.join(cotm_lvl_2_CR_1))
+
+                elif lvl in range(4,6):
+                    print('\n\nYou can be a beast up to CR 1, as long as it has no flying speed. Here are your options:')
+                    print('\nCR 0 - '+', '.join(cotm_lvl_4_CR_0))
+                    print('CR 1/8 -'+', '.join(cotm_lvl_4_CR_0125))
+                    print('CR 1/4 - '+', '.join(cotm_lvl_4_CR_025))
+                    print('CR 1/2 - '+', '.join(cotm_lvl_4_CR_05))
+                    print('CR 1 - '+', '.join(cotm_lvl_4_CR_1))
+
+                elif lvl in range(6,8):
+                    print('\n\nYou can be a beast up to CR 2, as long as it has no flying speed. Here are your options:')
+                    print('\nCR 0 - '+', '.join(cotm_lvl_6_CR_0))
+                    print('CR 1/8 -'+', '.join(cotm_lvl_6_CR_0125))
+                    print('CR 1/4 - '+', '.join(cotm_lvl_6_CR_025))
+                    print('CR 1/2 - '+', '.join(cotm_lvl_6_CR_05))
+                    print('CR 1 - '+', '.join(cotm_lvl_6_CR_1))
+                    print('CR 2 - '+', '.join(cotm_lvl_6_CR_2))
+
+                elif lvl == 8:
+                    print('\n\nYou can be any beast up to CR 2. Here are your options:')
+                    print('\nCR 0 - '+', '.join(cotm_lvl_8_CR_0))
+                    print('CR 1/8 -'+', '.join(cotm_lvl_8_CR_0125))
+                    print('CR 1/4 - '+', '.join(cotm_lvl_8_CR_025))
+                    print('CR 1/2 - '+', '.join(cotm_lvl_8_CR_05))
+                    print('CR 1 - '+', '.join(cotm_lvl_8_CR_1))
+                    print('CR 2 - '+', '.join(cotm_lvl_8_CR_2))
+
+                elif lvl in range(9,12):
+                    print('\n\nYou can be any beast up to CR 3. Here are your options:')
+                    print('\nCR 0 - '+', '.join(cotm_lvl_9_CR_0))
+                    print('CR 1/8 -'+', '.join(cotm_lvl_9_CR_0125))
+                    print('CR 1/4 - '+', '.join(cotm_lvl_9_CR_025))
+                    print('CR 1/2 - '+', '.join(cotm_lvl_9_CR_05))
+                    print('CR 1 - '+', '.join(cotm_lvl_9_CR_1))
+                    print('CR 2 - '+', '.join(cotm_lvl_9_CR_2))
+                    print('CR 3 - '+', '.join(cotm_lvl_9_CR_3))
+
+                elif lvl in range(12,15):
+                    print('\n\nYou can be any beast up to CR 4. Here are your options:')
+                    print('\nCR 0 - '+', '.join(cotm_lvl_12_CR_0))
+                    print('CR 1/8 -'+', '.join(cotm_lvl_12_CR_0125))
+                    print('CR 1/4 - '+', '.join(cotm_lvl_12_CR_025))
+                    print('CR 1/2 - '+', '.join(cotm_lvl_12_CR_05))
+                    print('CR 1 - '+', '.join(cotm_lvl_12_CR_1))
+                    print('CR 2 - '+', '.join(cotm_lvl_12_CR_2))
+                    print('CR 3 - '+', '.join(cotm_lvl_12_CR_3))
+                    print('CR 4 - '+', '.join(cotm_lvl_12_CR_4))
+
+                elif lvl in range(15,18):
+                    print('\n\nYou can be any beast up to CR 5. Here are your options:')
+                    print('\nCR 0 - '+', '.join(cotm_lvl_15_CR_0))
+                    print('CR 1/8 -'+', '.join(cotm_lvl_15_CR_0125))
+                    print('CR 1/4 - '+', '.join(cotm_lvl_15_CR_025))
+                    print('CR 1/2 - '+', '.join(cotm_lvl_15_CR_05))
+                    print('CR 1 - '+', '.join(cotm_lvl_15_CR_1))
+                    print('CR 2 - '+', '.join(cotm_lvl_15_CR_2))
+                    print('CR 3 - '+', '.join(cotm_lvl_15_CR_3))
+                    print('CR 4 - '+', '.join(cotm_lvl_15_CR_4))
+                    print('CR 5 - '+', '.join(cotm_lvl_15_CR_5))
            
-            elif lvl in range(18,21):
-                print('\n\nYou can be any beast up to CR 6. Here are your options:')
-                print('\nCR 0 - '+', '.join(cotm_lvl_18_CR_0))
-                print('CR 1/8 -'+', '.join(cotm_lvl_18_CR_0125))
-                print('CR 1/4 - '+', '.join(cotm_lvl_18_CR_025))
-                print('CR 1/2 - '+', '.join(cotm_lvl_18_CR_05))
-                print('CR 1 - '+', '.join(cotm_lvl_18_CR_1))
-                print('CR 2 - '+', '.join(cotm_lvl_18_CR_2))
-                print('CR 3 - '+', '.join(cotm_lvl_18_CR_3))
-                print('CR 4 - '+', '.join(cotm_lvl_18_CR_4))
-                print('CR 5 - '+', '.join(cotm_lvl_18_CR_5))
-                print('CR 6 - '+', '.join(cotm_lvl_18_CR_6))
-            else:
-                print('\nPlease enter a valid number') 
-        
+                elif lvl in range(18,21):
+                    print('\n\nYou can be any beast up to CR 6. Here are your options:')
+                    print('\nCR 0 - '+', '.join(cotm_lvl_18_CR_0))
+                    print('CR 1/8 -'+', '.join(cotm_lvl_18_CR_0125))
+                    print('CR 1/4 - '+', '.join(cotm_lvl_18_CR_025))
+                    print('CR 1/2 - '+', '.join(cotm_lvl_18_CR_05))
+                    print('CR 1 - '+', '.join(cotm_lvl_18_CR_1))
+                    print('CR 2 - '+', '.join(cotm_lvl_18_CR_2))
+                    print('CR 3 - '+', '.join(cotm_lvl_18_CR_3))
+                    print('CR 4 - '+', '.join(cotm_lvl_18_CR_4))
+                    print('CR 5 - '+', '.join(cotm_lvl_18_CR_5))
+                    print('CR 6 - '+', '.join(cotm_lvl_18_CR_6))
+                else:
+                    print('\nPlease enter a valid number') 
+
         if lvl in range(2,21):
             print('\nYou can stay in animal form for up to',int(lvl/2),'hours.')
         else:
             pass
-        if lvl in range(2,21):
-          stats = input('\nIf you would like to know more about one of these beasts, enter it here: ')
-          if stats in beast_stats:
-            print('\n'+str(beast_stats[stats]))
+        if lvl in range(2,21)
+         stats = input('\nIf you would like to know more about one of these beasts, enter it here: ')
+            if stats in beast_stats:
+              print('\n'+str(beast_stats[stats]))
         restart = input('\nWould you like to keep exploring? (y/n) ')
         if restart == 'y':
             count +=1
         elif restart == 'n':
             return 
-            
+
         
 def choose(beast):
-    if beast == 'all':
+   
+   if beast == 'all':
         print(all_beasts)
-        while True:
+   
+   while True:
             beast = input('Please input a beast: ')
             
             if beast in beast_stats:
@@ -2913,14 +2915,14 @@ def choose(beast):
                 print('Please enter a valid input')
                 pass
             
-    if beast == 'explore':
-        explore()
-        
-    elif beast in beast_stats:
-        print('\n\n',beast_stats[beast])
-        
-    else:
-        print('Please enter a valid input')
+      if beast == 'explore':
+          explore()
+
+      elif beast in beast_stats:
+          print('\n\n',beast_stats[beast])
+
+      else:
+          print('Please enter a valid input')
         
    
 def hp_tracker(beast):
