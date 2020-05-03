@@ -2763,7 +2763,7 @@ def explore():
     
 #asks for druid level, which determines max CR of wildshape
  
-       lvl = int(input('What is your druid level? '))
+        lvl = int(input('What is your druid level? '))
 
 #prints which beasts are suitable for your subclass and level
  
@@ -2889,9 +2889,9 @@ def explore():
             print('\nYou can stay in animal form for up to',int(lvl/2),'hours.')
         else:
             pass
-        if lvl in range(2,21)
+        if lvl in range(2,21):
          stats = input('\nIf you would like to know more about one of these beasts, enter it here: ')
-            if stats in beast_stats:
+         if stats in beast_stats:
               print('\n'+str(beast_stats[stats]))
         restart = input('\nWould you like to keep exploring? (y/n) ')
         if restart == 'y':
@@ -2899,32 +2899,36 @@ def explore():
         elif restart == 'n':
             return 
 
-        
+ 
+ 
 def choose(beast):
    
-   if beast == 'all':
-        print(all_beasts)
-   
-   while True:
-            beast = input('Please input a beast: ')
-            
-            if beast in beast_stats:
-                return beast
-            
-            else:
-                print('Please enter a valid input')
-                pass
-            
-      if beast == 'explore':
-          explore()
+     if beast == 'all':
+          
+          print(all_beasts)
 
-      elif beast in beast_stats:
-          print('\n\n',beast_stats[beast])
+     while True:
+              
+              beast = input('Please input a beast: ')
 
-      else:
-          print('Please enter a valid input')
-        
-   
+              if beast in beast_stats:
+                  return beast
+
+              else:
+                  print('Please enter a valid input')
+                  pass
+
+        if beast == 'explore':
+            explore()
+
+        elif beast in beast_stats:
+            print('\n\n',beast_stats[beast])
+
+        else:
+            print('Please enter a valid input')
+
+ 
+ 
 def hp_tracker(beast):
     print('\nYour starting HP is ',beast_hp[beast])
     HP = beast_hp[beast]
